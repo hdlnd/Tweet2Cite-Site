@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="citation generator, cite, citation, twitter, Twitter, academic">
+    <meta name="author" content="Benjamin Hedlund">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:600|Roboto:700' rel='stylesheet' type='text/css'>
+    <title>Tweet2Cite</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- Wrap all page content here -->
+    <div id="wrap">
+      <!-- Fixed navbar -->
+      <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Tweet2Cite</a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+
+      <!-- Begin page content -->
+      <div class="container">
+       
+        <div class="page-header">
+          <h1>Tweet2Cite</h1>
+        </div>
+        
+        <p class="lead">A quick, easy, and free way to convert a Tweet into various properly formatted citations. Paste a link to the Tweet you want to cite in the field below, click 'Go', and you're on your way!</p>
+        
+        <div class="cite-input">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="input-group">
+                <input type="url" id="submit-form-url" class="form-control" placeholder="Paste Tweet link here...">
+                <span class="input-group-btn">
+                  <button id="submit" class="btn btn-success" type="submit">Go!</button>
+                </span>
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+          </div><!-- /.row -->
+        </div>
+
+        <div id="tweet-div" style="display: none;"></div>
+        <div id="citations" style="display: none;">
+          <h2>MLA:</h2>
+          <div id="mla-citation"></div>
+          <h2>APA:</h2>
+          <div id="apa-citation"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="footer">
+      <div class="container">
+        <p class="text-muted credit">Special thanks to: <a href="http://martinbean.co.uk">@sferik</a>, <a href="http://ryanfait.com/sticky-footer/">@avand</a> and <a href="">@gkoberger</a></p>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//platform.twitter.com/widgets.js"></script>
+    <script src="/js/citation.js"></script>
+
+
+  </body>
+</html>
