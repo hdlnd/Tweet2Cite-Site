@@ -9,6 +9,10 @@ h1 {
 	font-size: 72px;
 }
 
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+}
 
 
 /* Wrapper for page content to push down footer */
@@ -28,7 +32,7 @@ h1 {
   background-color: #f5f5f5;
 }
 
-#tweet-div, #mla-div  {
+#tweet-div {
 	padding-bottom: 15px;
 	margin: 25px 0px 25px;
 	border-bottom: 1px solid #eee;
@@ -40,6 +44,15 @@ h1 {
 	border-bottom: 1px solid #eee;
 }
 
+#mla-citation {
+  background-color: #eee;
+  padding: 10px;
+}
+
+#apa-citation {
+  background-color: #eee;
+  padding: 10px;
+}
 /* Custom page CSS
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */

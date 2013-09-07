@@ -27,7 +27,12 @@ $(document).ready(function(){
                 var t_content = data.text;
             //manipulate tweet data variables into variables for citations
                 var author_name_arr = t_author_fullname.split(' ');
-                var mla_name = author_name_arr[1]+", "+author_name_arr[0]+" ("+t_author_handle+"). ";
+                var mla_name = 0
+                if (author_name_arr.length > 0) {
+                    mla_name = author_name_arr[0];
+                    } else {
+                        mla_name = author_name_arr[1]+", "+author_name_arr[0]+" ("+t_author_handle+"). ";
+                };
                 var apa_name = t_author_handle+". ";
                 var t_date_arr = t_date_raw.split(' ');
                 var t_time_arr = t_date_arr[3].split(':');
@@ -38,11 +43,13 @@ $(document).ready(function(){
                 mla_citation = mla_name+'"'+t_content+'". '+mla_date+" Tweet";
                 apa_citation = apa_name+apa_date+t_content+" [Twitter post]. "+"Retrieved from "+url;
             //present the citations to the user
-                $('#mla-citation').append(mla_citation);
-
+                $('div#mla-citation').html(mla_citation);
+                $('div#apa-citation').html(apa_citation);
+            //show hidden divs to user
+                $('#tweet-div').fadeIn(1500);
+                $('#citations').fadeIn(2000);
             });
         }
     })
 })
-
 
