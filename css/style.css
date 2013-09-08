@@ -6,12 +6,25 @@ body {
 }
 h1 {
 	font-family: 'Roboto', sans-serif;
-	font-size: 72px;
+	font-size: 60px;
+  width: 300px;
 }
 
 h2 {
   font-family: 'Roboto', sans-serif;
   font-size: 36px;
+}
+
+a.skm {
+  width: 65px;
+  height: 30px;
+  background: url(http://hdlnd.github.io/Tweet2Cite-Site/img/tweet2citelogo.svg);
+  background-repeat: no-repeat;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top: 15px;
+  margin-left: 15px;
 }
 
 
@@ -53,6 +66,10 @@ h2 {
   background-color: #eee;
   padding: 10px;
 }
+
+#citations {
+  margin-bottom: 25px;
+}
 /* Custom page CSS
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
@@ -61,7 +78,7 @@ h2 {
   padding: 60px 15px 0;
 }
 .container .credit {
-	padding-top: 10px;
+	padding-top: 7px;
   margin: 10px 0;
 }
 

@@ -1,4 +1,3 @@
-//Get Embedded Tweet markup, and display on page
 $(document).ready(function(){
     $('#submit').click(function(){
         var url = $('#submit-form-url').val();
@@ -28,11 +27,13 @@ $(document).ready(function(){
             //manipulate tweet data variables into variables for citations
                 var author_name_arr = t_author_fullname.split(' ');
                 var mla_name = 0
-                if (author_name_arr.length > 0) {
-                    mla_name = author_name_arr[0];
-                    } else {
-                        mla_name = author_name_arr[1]+", "+author_name_arr[0]+" ("+t_author_handle+"). ";
-                };
+                if (author_name_arr.length > 2 || author_name_arr.length <= 1) {
+                    mla_name = t_author_fullname+" ("+t_author_handle+"). ";
+                    } 
+                else {
+                    mla_name = author_name_arr[1]+", "+author_name_arr[0]+" ("+t_author_handle+"). ";
+                }
+             
                 var apa_name = t_author_handle+". ";
                 var t_date_arr = t_date_raw.split(' ');
                 var t_time_arr = t_date_arr[3].split(':');
