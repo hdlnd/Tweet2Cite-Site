@@ -7,7 +7,6 @@ body {
 h1 {
 	font-family: 'Roboto', sans-serif;
 	font-size: 60px;
-  width: 300px;
 }
 
 h2 {
@@ -25,10 +24,6 @@ a.skm {
   overflow: hidden;
   margin-top: 15px;
   margin-left: 15px;
-}
-
-.page-header {
-	margin-top: 100px;
 }
 
 
@@ -75,18 +70,19 @@ a.skm {
   margin-bottom: 25px;
 }
 
+#wrap > .container {
+  padding: 60px 15px 0;
+}
+
 #follow-me {
   margin-top: 15px;
 }
 
 #email-me {
   margin-right: 10px;
-
-#wrap > .container {
-  padding: 60px 15px 0;
 }
 .container .credit {
-  padding-top: 7px;
+	padding-top: 7px;
   margin: 10px 0;
   font-size: 12px;
 }
