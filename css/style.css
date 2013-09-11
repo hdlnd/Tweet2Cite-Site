@@ -70,9 +70,13 @@ a.skm {
 #citations {
   margin-bottom: 25px;
 }
-/* Custom page CSS
--------------------------------------------------- */
-/* Not required for template or sticky footer method. */
+
+#follow-me {
+  margin-top: 15px;
+}
+
+#email-me {
+  margin-right: 10px;
 
 #wrap > .container {
   padding: 60px 15px 0;
