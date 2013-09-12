@@ -7,7 +7,7 @@
     <meta name="author" content="Benjamin Hedlund">
     <link rel="shortcut icon" href="../../assets/ico/favicon.png">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:600|Roboto:700' rel='stylesheet' type='text/css'>
-    <title>Tweet2Cite</title>
+    <title>Tweet2Cite :: Contact</title>
 
     <!-- Bootstrap core CSS -->
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
@@ -39,7 +39,7 @@
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
               <li><a href="/about.html">About</a></li>
-              <li><a href="/contact.html">Contact</a></li>
+              <li class="active"><a href="/contact.html">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -49,30 +49,16 @@
       <div class="container">
        
         <div class="page-header">
-          <h1>Tweet2Cite</h1>
+          <h1>Ben Hedlund</h1>
         </div>
         
-        <p class="lead">A quick, easy, and free citation generator that converts Tweets into, properly formatted MLA and APA, citations. Paste a link to the Tweet you want to cite in the field below, click 'Go', and you're on your way!</p>
-        
-        <div class="cite-input">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="input-group">
-                <input type="url" id="submit-form-url" class="form-control" placeholder="Paste Tweet link here...">
-                <span class="input-group-btn">
-                  <button id="submit" class="btn btn-success" type="submit">Go!</button>
-                </span>
-              </div><!-- /input-group -->
-            </div><!-- /.col-lg-6 -->
-          </div><!-- /.row -->
+        <p class="lead">I develop websites and apps, which aim to do as much as possible on the front-end. Please feel free to contact me anytime!</p>
+        <div>
+          <span id="email-me" class="glyphicon glyphicon-envelope"></span>
+          <a href="mailto:ben@hdlnd.com">ben@hdlnd.com</a>
         </div>
-
-        <div id="tweet-div" style="display: none;"></div>
-        <div id="citations" class="lead" style="display: none;">
-          <h2>MLA:</h2>
-          <div id="mla-citation"></div>
-          <h2>APA:</h2>
-          <div id="apa-citation"></div>
+        <div id="follow-me">
+          <a href="https://twitter.com/hdlnd" class="twitter-follow-button" data-show-count="false">Follow @hdlnd</a>
         </div>
 
       </div>
@@ -91,16 +77,7 @@
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
     <script src="//platform.twitter.com/widgets.js"></script>
     <script src="/js/citation.js"></script>
-    
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    
-      ga('create', 'UA-12635354-6', 'tweet2cite.com');
-      ga('send', 'pageview');
-    </script>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 
   </body>
