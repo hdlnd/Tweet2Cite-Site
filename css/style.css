@@ -17,7 +17,7 @@ h2 {
 a.skm {
   width: 65px;
   height: 30px;
-  background: url(/img/tweet2citeLogo.svg);
+  background: url(../img/tweet2citeLogo.svg);
   background-repeat: no-repeat;
   text-indent: 100%;
   white-space: nowrap;
