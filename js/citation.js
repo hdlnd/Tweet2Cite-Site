@@ -41,7 +41,7 @@ $(document).ready(function(){
                 var mla_date = t_date_arr[2]+" "+t_date_arr[1]+" "+t_date_arr[5]+", "+mla_time;
                 var apa_date = "("+t_date_arr[5]+", "+t_date_arr[1]+" "+t_date_arr[2]+"). ";
             //create variables of citation strings for MLA and APA
-                mla_citation = mla_name+'"'+t_content+'". '+mla_date+" Tweet";
+                mla_citation = mla_name+'"'+t_content+'." '+mla_date+" Tweet.";
                 apa_citation = apa_name+apa_date+t_content+" [Twitter post]. "+"Retrieved from "+url;
             //present the citations to the user
                 $('div#mla-citation').html(mla_citation);
