@@ -6,6 +6,7 @@ $(document).ready(function(){
         }
         else {
             //$("#tweet_div").show();
+            mixpanel.track("Tweet submitted");
             $.ajax({
                 url: "https://api.twitter.com/1/statuses/oembed.json?url="+url,
                 dataType: "jsonp",
