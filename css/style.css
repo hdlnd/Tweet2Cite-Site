@@ -97,3 +97,7 @@ a.skm {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+#myModal {
+  background: rgba(200, 54, 54, 0.5);
+}
